@@ -35,7 +35,7 @@
 ## Installation
 
 1. Click **Download for Windows** above and download `meet-autopilot-<version>-setup.exe` from the **Assets** section.
-2. Run the installer. It installs into your user profile (`%LocalAppData%\Programs\MeetAutopilot`) and does not need administrator rights.
+2. Run the installer. It installs into `C:\Program Files\MeetAutopilot` and asks for administrator rights (UAC); if you are a standard user, Windows asks for an administrator's credentials. Installing over version 1.0.2 removes the old copy from your user profile automatically; your settings and sign-in (`%AppData%\MeetAutopilot`) are kept.
 3. The installer is not digitally signed yet, so Windows may warn you:
    - **SmartScreen** ("Windows protected your PC"): click **More info → Run anyway**.
    - **Smart App Control** (on by default on a clean Windows 11) blocks unsigned programs without an "Run anyway" button. If it blocks the installer, the app cannot be installed while Smart App Control is on.
@@ -59,7 +59,7 @@ The result must equal the value in the `.sha256` file.
 
 ## Uninstall
 
-**Settings → Apps → Installed apps → Meet Autopilot → Uninstall.** Your settings and tokens stay in `%AppData%\MeetAutopilot`; delete that folder to remove them.
+**Settings → Apps → Installed apps → Meet Autopilot → Uninstall** (Windows asks for administrator rights, UAC). Your settings and tokens stay in `%AppData%\MeetAutopilot`; delete that folder to remove them.
 
 ## Feedback
 
